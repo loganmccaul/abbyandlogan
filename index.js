@@ -20,6 +20,21 @@ const clearNavSelection = () => {
 
 const sections = [...document.querySelectorAll('section')];
 
+/* Section fade in */
+const sectionObserver = new IntersectionObserver((events) => {
+  events.forEach(event => {
+    console.log(event);
+    if (event.isIntersecting) {
+      event.target.style.opacity = 1;
+    } else {
+      event.target.style.opacity = 0;
+    }
+  })
+}, {
+  threshold: [.4]
+});
+
+sections.forEach(section => sectionObserver.observe(section))
 
 /* Dot animation */
 const initScrollPosition = window.scrollY;

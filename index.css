@@ -79,6 +79,7 @@ a {
   border-bottom: 2px solid transparent;
   padding-bottom: 2px;
   white-space: nowrap;
+  font-weight: 400;
 }
 
 a:visited {
@@ -122,9 +123,11 @@ main {
 }
 
 section {
-  height: 100vh;
   width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
   padding-top: calc(var(--nav-height) + 20px);
+  transition: opacity .75s ease-in-out;
 }
 
 h1 {
@@ -149,6 +152,26 @@ h2 {
   font-family: "Letter Magic";
   font-size: 40px;
   color: var(--color-base);
+  margin-bottom: 3rem;
+}
+
+iframe {
+  margin: 1rem 0;
+}
+
+section p, section a, section a:visited {
+  color: var(--color-base);
+  font-size: 1.125rem;
+  font-weight: 800;
+}
+
+section a {
+  display: block;
+  text-decoration: underline;
+}
+
+section a:hover {
+  opacity: .9;
 }
 
 .dot {
