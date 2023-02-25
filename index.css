@@ -78,6 +78,7 @@ a {
   position: relative;
   border-bottom: 2px solid transparent;
   padding-bottom: 2px;
+  white-space: nowrap;
 }
 
 a:visited {
@@ -193,6 +194,18 @@ footer {
 }
 
 @media (max-width: 375px) {
+  nav ul li a {
+    font-size: .75rem;
+  }
+
+  nav ul {
+    height: 40px;
+  }
+
+  nav ul li {
+    margin-right: .5rem;
+  }
+
   header {
     padding-top: calc(var(--nav-height) + 2rem);
   }
