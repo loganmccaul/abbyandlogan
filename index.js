@@ -51,7 +51,7 @@ document.addEventListener('scroll', () => {
     dot.style.transformOrigin = 'unset'
   }
 
-  if (scrollPosition > 0 && scrollPosition < dotTopPosition) {
+  if (scrollPosition > 0 && scrollPosition < dotTopPosition && scrollPosition / 5 > 1) {
     dot.style.animationName = 'unset';
     dot.style.transformOrigin = 'top'
     dot.style.transform = `scale(${scrollPosition / 5})`;

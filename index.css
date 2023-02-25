@@ -165,11 +165,6 @@ h2 {
   animation-timing-function: ease-in-out;
 }
 
-.dots-container {
-  position: absolute;
-  width: 100%;
-}
-
 @keyframes breath {
   0% {
     transform: scale(1);
@@ -197,11 +192,7 @@ footer {
   color: var(--color-base);
 }
 
-@media (max-width: 425px) {
-  nav {
-    display: none;
-  }
-
+@media (max-width: 375px) {
   header {
     padding-top: calc(var(--nav-height) + 2rem);
   }
