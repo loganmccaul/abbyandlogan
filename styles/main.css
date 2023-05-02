@@ -1,0 +1,61 @@
+@font-face {
+  font-family: "Letter Magic";
+  src: local("Letter Magic.woff"), url("Letter Magic.woff");
+}
+
+@font-face {
+  font-family: "Bellota Regular";
+  src: local("BellotaText-Regular.ttf"), url("BellotaText-Regular.ttf");
+}
+
+:root {
+  --green: #4F8057;
+  --blue: #112944;
+  --frost: #F9FBFF;
+  --red: #A64F5E;
+  --lightblue: #CEDEFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  overflow-x: clip;
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: auto;
+  position: relative;
+  min-height: 4000px;
+  background: var(--frost);
+  color: var(--blue);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h2 {
+  font-size: 120px;
+  width: 600px;
+  letter-spacing: -12px;
+  line-height: .75;
+}
+
+.section {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 160px;
+}
+
+.section .content {
+  width: 500px;
+}
+
+.content p {
+  font-size: 20px;
+  margin-bottom: 1rem;
+}
