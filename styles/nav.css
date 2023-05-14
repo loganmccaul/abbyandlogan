@@ -12,7 +12,7 @@ nav ul li {
     display: inline;
 }
 
-nav ul li a {
+nav ul a {
     text-transform: uppercase;
     font-size: 14px;
     text-decoration: none;
@@ -27,11 +27,11 @@ a {
     color: var(--red);
 }
 
-nav ul li a:visited {
+nav ul a:visited {
     color: var(--blue);
 }
 
-nav ul li a:hover {
+nav ul a:hover li {
     border-bottom: 2px solid var(--red);
 }
 
@@ -41,6 +41,10 @@ a:visited {
 
 a:hover {
     border-bottom: 2px solid var(--blue);
+}
+
+nav ul a:hover {
+    border-bottom: none;
 }
 
 .rotate {
@@ -59,7 +63,7 @@ a:hover {
         display: block;
     }
 
-    nav ul li a, nav ul li a:visited {
+    nav ul a, nav ul a:visited {
         writing-mode: sideways-lr;
         font-size: 13px;
         margin-top: 1rem;
@@ -67,6 +71,11 @@ a:hover {
         padding-right: 1rem;
         color: var(--blue);
         font-weight: 800;
+    }
+
+    nav ul a:hover li {
+        border-right: 2px solid var(--red);
+        border-bottom: none;
     }
 
     .rotate {
