@@ -14,6 +14,7 @@
     padding: 18px;
     width: 336px;
     border-radius: 4px;
+    z-index: 99999;
   }
   
   .collage img {
@@ -31,10 +32,10 @@
   
   @media (max-width: 1000px) {
     .collage {
-      height: 5000px;
+      height: 6000px;
     }
   
     .collage .polaroid {
-      width: 275px;
+      width: 250px;
     }
   }

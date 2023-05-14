@@ -1,15 +1,16 @@
 .countdown {
     color: var(--red);
     border-radius: 50%;
-    position: absolute;
-    right: 3rem;
-    top: -353px;
+    position: fixed;
+    right: 2.8rem;
+    top: -45px;
+    z-index: 999;
 }
 
 .countdown-count-border {
+    background: var(--frost);
     border: 3px dashed var(--red);
     border-radius: 50%;
-    background-color: var(--frost);
     width: 180px;
     height: 180px;
     font-size: 64px;
@@ -56,9 +57,10 @@
 
 @media (max-width: 1000px) {
     .countdown {
-        top: -231px;
-        right: -29px;
-        position: absolute;
+        top: -33px;
+        right: -15px;
+        position: fixed;
+        z-index: -1;
     }
 
     .countdown-count-border {

@@ -53,10 +53,11 @@ nav ul a:hover {
 
 @media (max-width: 1000px) {
     nav {
-        width: 3rem;
+        width: 2.5rem;
         left: 2px;
         padding-top: .5rem;
         margin: 0;
+        background: var(--frost);
     }
 
     nav ul a {

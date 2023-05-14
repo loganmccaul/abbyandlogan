@@ -11,6 +11,7 @@ h1 {
   line-height: .75;
   text-align: right;
   margin: 0 3rem;
+  background: var(--frost);
 }
 
 .splash {
@@ -18,7 +19,7 @@ h1 {
   width: calc(100% - 6rem);
   height: 800px;
   position: relative;
-  background-image: url('../splash-2.jpg');
+  background-image: url('../splash-2.webp');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
