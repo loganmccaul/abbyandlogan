@@ -10,11 +10,12 @@ h1 {
   letter-spacing: -5px;
   line-height: .75;
   text-align: right;
+  margin: 0 3rem;
 }
 
 .splash {
   text-align: left;
-  width: 100%;
+  width: calc(100% - 6rem);
   height: 800px;
   position: relative;
   background-image: url('../splash-2.jpg');
@@ -22,6 +23,7 @@ h1 {
   background-size: cover;
   background-position: top;
   margin-bottom: 160px;
+  margin: 0 auto;
 }
 
 .marquee {
@@ -58,7 +60,13 @@ h1 {
 @media (max-width: 1000px) {
   h1 {
     font-size: 100px;
+    margin: 0;
   }
+
+  .splash {
+    width: 100%;
+  }
+
   .marquee {
     padding-top: 30px;
     padding-bottom: 16px;
