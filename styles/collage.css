@@ -3,6 +3,7 @@
     position: relative;
     height: 3000px;
     margin-top: -200px;
+    background: var(--frost);
   }
   
   .collage .polaroid {
