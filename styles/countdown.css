@@ -7,12 +7,13 @@
 }
 
 .countdown-count-border {
-    border: 3px solid var(--red);
+    border: 3px dashed var(--red);
     border-radius: 50%;
+    background-color: var(--frost);
     width: 180px;
     height: 180px;
     font-size: 64px;
-    /* animation: clockwise 14s linear infinite; */
+    animation: clockwise 14s linear infinite;
 }
 
 .countdown-count {
@@ -43,7 +44,7 @@
     top: 77px;
     left: 36px;
 }
-/* 
+
 @keyframes clockwise {
     0% {
         transform: rotate(0);
@@ -51,7 +52,7 @@
     100% {
         transform: rotate(-360deg);
     }
-} */
+}
 
 @media (max-width: 1000px) {
     .countdown {
