@@ -43,6 +43,7 @@ main {
   max-width: 1000px;
   margin: 0 auto;
   background: var(--frost);
+  padding: 0 3rem;
 }
 
 h2 {
