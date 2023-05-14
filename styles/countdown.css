@@ -17,7 +17,7 @@
 
 .countdown-count {
     position: absolute;
-    top: 25px;
+    top: 33px;
     width: 100%;
     transform: rotate(-16deg);
     left: -2px;
@@ -48,3 +48,15 @@
         transform: rotate(-360deg);
     }
 }
+
+@media (max-width: 1000px) {
+    .countdown-count-border {
+        width: 175px;
+        height: 175px;
+    }
+
+    .countdown-count {
+        left: 1px;
+        top: 30px;
+    }
+  }

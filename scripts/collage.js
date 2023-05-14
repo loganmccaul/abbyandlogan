@@ -1,7 +1,10 @@
-const collage = document.querySelector('.collage');
+const collage = document.querySelector('body');
 const collageImages = [...document.querySelectorAll('.polaroid')];
 
-const { height: collageHeight, width: collageWidth } = collage.getBoundingClientRect();
+const { width: collageWidth } = collage.getBoundingClientRect();
+const { height: collageHeight } = document.querySelector('.collage').getBoundingClientRect();
+
+
 
 let activeImage;
 
@@ -11,9 +14,12 @@ collageImages.forEach(img => {
 });
 
 const activateImage = (clientX, clientY, target) => {
-  collage.appendChild(target);
+  document.querySelector('.collage').appendChild(target);
 
-  const [offsetX, offsetY] = target.style.transform.match(/(\d+\.\d+)|(\d+)/g);
+  console.log(target.style.transform);
+  const [offsetX, offsetY] = target.style.transform.match(/(-(\d+\.\d+))|(\d+\.\d+)|(-\d+)|(\d+)/g);
+
+  console.log(offsetX, offsetY);
 
   activeImage = {
     element: target,
@@ -23,11 +29,11 @@ const activateImage = (clientX, clientY, target) => {
 }
 
 const down = (evt) => {
-  evt.preventDefault();
-
   if (collageImages.includes(evt.target)) {
+    evt.preventDefault();
     activateImage(evt.clientX, evt.clientY, evt.target);
   } else if (collageImages.includes(evt.target.parentElement)) {
+    evt.preventDefault();
     activateImage(evt.clientX, evt.clientY, evt.target.parentElement);
   };
 }
