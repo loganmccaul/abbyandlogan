@@ -32,6 +32,7 @@ body {
   -moz-osx-font-smoothing: auto;
   background: var(--frost);
   color: var(--blue);
+  padding-bottom: 5rem;
 }
 
 html {
@@ -43,7 +44,7 @@ main {
   max-width: 1000px;
   margin: 0 auto;
   background: var(--frost);
-  padding: 0 3rem;
+  padding: 5rem 3rem 0;
 }
 
 h2 {
@@ -79,6 +80,7 @@ h2 {
 .content p {
   font-size: 20px;
   margin-bottom: 1rem;
+  line-height: 1.25;
 }
 
 .day {
@@ -148,6 +150,27 @@ footer {
   margin-bottom: 1rem;
 }
 
+details {
+  border: 1px solid var(--blue);
+  margin-top: 1rem;
+}
+
+details p {
+  padding: 0 2rem 1rem;
+  line-height: 1.125;
+}
+
+summary {
+  padding: 1rem;
+  font-weight: 800;
+  font-size: 1.125rem;
+  cursor: pointer;
+}
+
+summary::marker {
+  color: var(--red);
+}
+
 @media (max-width: 1000px) {
   h2 {
     font-size: 64px;
@@ -158,9 +181,10 @@ footer {
   }
 
   .section {
-    padding-top: 3rem;
+    padding-top: 0;
     padding-left: 0px;
     margin-top: 51px;
+    padding-bottom: 8rem;
   }
 
   .section .content {
@@ -174,10 +198,12 @@ footer {
   body {
     margin-left: 3rem;
     padding: 0;
+    padding-bottom: 5rem;
   }
 
   main {
     padding: 0;
+    padding-top: 5rem;
   }
 
   h3 {
