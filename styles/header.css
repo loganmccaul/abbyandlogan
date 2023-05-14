@@ -39,6 +39,8 @@ h1 {
   padding-bottom: 16px;
   z-index: 99;
   background: var(--frost);
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
   
 .marquee div {
@@ -70,6 +72,7 @@ h1 {
   .marquee {
     padding-top: 30px;
     padding-bottom: 16px;
+    margin: 0;
     margin-top: 200px;
   }
 }
