@@ -25,13 +25,14 @@
 }
 
 body {
+  position: relative;
   font-family: var(--body);
-  overflow-x: clip;
   font-smooth: always;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: auto;
   background: var(--frost);
   color: var(--blue);
+  padding: 0 3rem;
 }
 
 html {
@@ -157,6 +158,7 @@ h3 {
 
   body {
     margin-left: 3rem;
+    padding: 0;
   }
 
   h3 {

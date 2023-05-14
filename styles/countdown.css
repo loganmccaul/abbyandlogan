@@ -2,15 +2,15 @@
     color: var(--red);
     border-radius: 50%;
     position: absolute;
-    right: -10px;
-    top: -45px;
+    right: -18px;
+    top: -353px;
 }
 
 .countdown-count-border {
-    border: 3px dashed var(--red);
+    border: 3px solid var(--red);
     border-radius: 50%;
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
     font-size: 64px;
     /* animation: clockwise 14s linear infinite; */
 }
@@ -19,7 +19,7 @@
     position: absolute;
     top: 33px;
     width: 100%;
-    transform: rotate(-16deg);
+    transform: rotate(-16deg) translate(2px, 4px);
     left: -2px;
 }
 
@@ -28,7 +28,9 @@
     font-size: 84px;
     text-align: center;
     letter-spacing: -4px;
-    padding-top: 8px;
+    position: absolute;
+    top: 6px;
+    left: 18px;
 }
 
 .countdown-day {
@@ -37,9 +39,11 @@
     font-size: 36px;
     text-transform: uppercase;
     letter-spacing: -3px;
-    margin-top: -28px;
+    position: absolute;
+    top: 77px;
+    left: 36px;
 }
-
+/* 
 @keyframes clockwise {
     0% {
         transform: rotate(0);
@@ -47,9 +51,15 @@
     100% {
         transform: rotate(-360deg);
     }
-}
+} */
 
 @media (max-width: 1000px) {
+    .countdown {
+        top: -231px;
+        right: -29px;
+        position: absolute;
+    }
+
     .countdown-count-border {
         width: 175px;
         height: 175px;
@@ -58,5 +68,6 @@
     .countdown-count {
         left: 1px;
         top: 30px;
+        transform: rotate(-16deg) translate(-1px, 0px);
     }
   }
