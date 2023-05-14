@@ -1,0 +1,41 @@
+
+.collage {
+    position: relative;
+    height: 3000px;
+    margin-top: -200px;
+    z-index: 999999;
+  }
+  
+  .collage .polaroid {
+    position: absolute;
+    cursor: move;
+    box-shadow: 4px 4px 12px rgba(0,0,0, .4);
+    touch-action: none;
+    background: white;
+    padding: 18px;
+    width: 336px;
+    border-radius: 4px;
+  }
+  
+  .collage img {
+    width: 100%;
+    border-radius: 2px;
+  }
+  
+  .collage p {
+    height: 36px;
+    font-family: var(--body);
+    font-size: 18px;
+    text-align: center;
+    margin: .5rem 0 0;
+  }
+  
+  @media (max-width: 1000px) {
+    .collage {
+      height: 5000px;
+    }
+  
+    .collage .polaroid {
+      width: 275px;
+    }
+  }
