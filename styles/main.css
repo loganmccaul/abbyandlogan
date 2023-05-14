@@ -88,6 +88,7 @@ h2 {
   flex-wrap: wrap;
   width: 100%;
   padding-right: 5rem;
+  margin-bottom: 4rem;
 }
 
 .list {
@@ -105,6 +106,7 @@ h3 {
   font-size: 48px;
   font-family: var(--heading);
   margin-left: -3px;
+  margin-bottom: 1rem;
 }
 
 .event-details {
