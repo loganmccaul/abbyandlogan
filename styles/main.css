@@ -138,6 +138,16 @@ footer {
   text-align: center;
 }
 
+.engagement {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.engagement img {
+  width: calc(50% - .5rem);
+  margin-bottom: 1rem;
+}
+
 @media (max-width: 1000px) {
   h2 {
     font-size: 64px;
@@ -163,6 +173,10 @@ footer {
 
   body {
     margin-left: 3rem;
+    padding: 0;
+  }
+
+  main {
     padding: 0;
   }
 
@@ -193,5 +207,9 @@ footer {
 
   .anchor {
     margin-top: 0;
+  }
+
+  .engagement img {
+    width: 100%;
   }
 }
