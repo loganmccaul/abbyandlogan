@@ -101,6 +101,31 @@ h2 {
   width: 200px;
 }
 
+.ceremony-title {
+  margin-bottom: 4rem;
+}
+
+.ceremony-day {
+  display: inline;
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.schedule {
+  margin-top: 1rem;
+}
+
+.schedule li {
+  list-style: none;
+  margin-bottom: 1rem;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.schedule li .time {
+  font-weight: 200;
+}
+
 h3 {
   width: 100%;
   font-size: 48px;
