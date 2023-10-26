@@ -22,7 +22,7 @@
     top: 33px;
     width: 100%;
     transform: rotate(-16deg) translate(2px, 4px);
-    left: -2px;
+    left: 2px;
 }
 
 .countdown-number {
@@ -30,9 +30,8 @@
     font-size: 84px;
     text-align: center;
     letter-spacing: -4px;
-    position: absolute;
-    top: 6px;
-    left: 36px;
+    position: relative;
+    left: -4%;
 }
 
 .countdown-day {
